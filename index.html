@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="barbie">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Empiseysocheata ✦ DevSecOps in the making</title>
+  <meta name="description" content="Portfolio of In Empiseysocheata (cheetahh1) — web developer, SOC lab team lead and aspiring DevOps / DevSecOps engineer. Wazuh, SIEM, Next.js, Python, and a lot of pink." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <a class="logo" href="#top"><span class="logo-star">✦</span> cheetahh1</a>
+    <nav class="nav-links">
+      <a href="#pipeline">Pipeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      <span class="toggle-label">barbie mode</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot"></span> status: shipping &amp; learning</p>
+        <h1>
+          <span class="line">Hi, I'm</span>
+          <span class="line gradient-text" data-name>Socheata</span>
+          <span class="line small">and I build things that <em>glitter</em> in prod.</span>
+        </h1>
+        <p class="lede">
+          Web developer who led a SOC lab, writes detection rules for fun, and is obsessed with the
+          parts people don't see: pipelines, infra, and security. Aspiring
+          <strong>DevOps &amp; DevSecOps</strong> engineer, currently turning full‑stack projects
+          into deploy‑anywhere, secure‑by‑default ones.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">See my work ✨</a>
+          <a class="btn btn-ghost" href="https://github.com/cheetahh1" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong data-count="9">0</strong><span>projects shipped</span></li>
+          <li><strong data-count="4">0</strong><span>live on Vercel</span></li>
+          <li><strong data-count="1">0</strong><span>SOC lab led</span></li>
+          <li><strong>∞</strong><span>sparkles</span></li>
+        </ul>
+      </div>
+
+      <div class="terminal reveal" aria-label="Animated terminal">
+        <div class="terminal-bar">
+          <span class="tb-dot"></span><span class="tb-dot"></span><span class="tb-dot"></span>
+          <span class="tb-title">cheetahh1@pinkbox: ~</span>
+        </div>
+        <pre class="terminal-body" id="terminal"></pre>
+      </div>
+    </section>
+
+    <!-- ===================== PIPELINE ===================== -->
+    <section id="pipeline" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">how I work</p>
+        <h2>My <span class="gradient-text">pipeline</span></h2>
+        <p class="sub">Every project runs through the same stages. Hover a stage to see what I use there.</p>
+      </div>
+
+      <div class="pipeline reveal">
+        <div class="pipe-line" aria-hidden="true"></div>
+        <article class="stage" style="--i:0">
+          <div class="stage-node"><span>📝</span></div>
+          <h3>Plan</h3>
+          <p>SRS docs · lab guides · README‑first</p>
+        </article>
+        <article class="stage" style="--i:1">
+          <div class="stage-node"><span>💻</span></div>
+          <h3>Code</h3>
+          <p>TypeScript · Next.js · Python · Solidity · C#</p>
+        </article>
+        <article class="stage" style="--i:2">
+          <div class="stage-node"><span>🧱</span></div>
+          <h3>Build</h3>
+          <p>Vite · Tailwind · Hardhat · Docker Compose</p>
+        </article>
+        <article class="stage" style="--i:3">
+          <div class="stage-node"><span>🧪</span></div>
+          <h3>Test</h3>
+          <p>Hardhat unit tests · QA reports · attack simulations</p>
+        </article>
+        <article class="stage stage-sec" style="--i:4">
+          <div class="stage-node"><span>🛡️</span></div>
+          <h3>Secure</h3>
+          <p>Wazuh rules · SOAR playbooks · MITRE ATT&amp;CK</p>
+        </article>
+        <article class="stage" style="--i:5">
+          <div class="stage-node"><span>🚀</span></div>
+          <h3>Deploy</h3>
+          <p>Vercel · DigitalOcean · Docker Swarm</p>
+        </article>
+        <article class="stage" style="--i:6">
+          <div class="stage-node"><span>📈</span></div>
+          <h3>Monitor</h3>
+          <p>Wazuh SIEM · log analysis · Telegram alerts</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">built with a team</p>
+        <h2>Team <span class="gradient-text">projects</span></h2>
+        <p class="sub">Collaborative repos where I owned a specific piece. The "my part" box is what I actually shipped.</p>
+      </div>
+
+      <div class="projects">
+        <!-- CloudGuard SOC Lab -->
+        <article class="card reveal security featured">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🛰️</span>
+            <div class="card-badges">
+              <span class="badge sec">★ team leader</span>
+              <span class="badge">internship · 2026</span>
+            </div>
+          </div>
+          <h3>CloudGuard — SOC Simulator</h3>
+          <p>
+            A self‑hosted Security Operations Center built during a 3‑month academic internship.
+            A Wazuh SIEM runs on a DigitalOcean droplet, monitoring Windows 11 and Ubuntu endpoints
+            over Tailscale. Shuffle SOAR automates the response and pushes alerts to a Telegram bot.
+          </p>
+          <ul class="highlights">
+            <li>Custom Wazuh rules mapped to 7 MITRE ATT&amp;CK techniques: SSH brute force, sudo abuse, FIM with SHA256, port scans</li>
+            <li>4 end‑to‑end SOAR playbooks with VirusTotal, AbuseIPDB and Fail2ban auto‑blocking</li>
+            <li>Delivered with a Lab Guide and SRS document, bi‑weekly supervisor check‑ins and a final presentation</li>
+          </ul>
+          <p class="my-part"><b>My part:</b> led the two‑person team — lab architecture, planning and reporting,
+            detection rules and playbooks, and the documentation that shipped with it.</p>
+          <div class="tags">
+            <span>Wazuh</span><span>Shuffle SOAR</span><span>Sysmon</span><span>Fail2ban</span><span>Docker Swarm</span><span>DigitalOcean</span><span>Tailscale</span><span>MITRE ATT&amp;CK</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/RasyKy/SOC-Lab" target="_blank" rel="noopener">Source &amp; docs ↗</a>
+          </div>
+        </article>
+
+        <!-- CSA-OPS -->
+        <article class="card reveal security">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🧨</span>
+            <div class="card-badges">
+              <span class="badge live">● live</span>
+              <span class="badge sec">⚠ security</span>
+            </div>
+          </div>
+          <h3>CSA‑OPS</h3>
+          <p>
+            A custom‑built SIEM with automated response and AI‑assisted triage. A Python agent collects
+            Windows telemetry, a FastAPI backend stores alerts and cases in Elasticsearch, and a Next.js
+            dashboard handles investigation and incident reports.
+          </p>
+          <p class="my-part"><b>My part:</b> authored the three attack‑simulation scenarios (credential theft,
+            persistence &amp; lateral movement, data exfiltration) mapped to MITRE ATT&amp;CK and tested
+            end‑to‑end against the detection engine. Benign simulations only.</p>
+          <div class="tags">
+            <span>Python</span><span>FastAPI</span><span>Elasticsearch</span><span>Next.js</span><span>MITRE ATT&amp;CK</span>
+          </div>
+          <div class="card-links">
+            <a href="https://csa-ops.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/RasyKy/csa-ops" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- Verify -->
+        <article class="card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🎓</span>
+            <div class="card-badges">
+              <span class="badge live">● live</span>
+              <span class="badge">blockchain</span>
+            </div>
+          </div>
+          <h3>Verify</h3>
+          <p>
+            Blockchain‑anchored certificate verification for Cambodian educational institutions.
+            Issuers submit certificates, the backend hashes them onto Polygon, and anyone can verify
+            via QR code without an account. Nuxt frontend, Express API, Supabase, CI on GitHub Actions.
+          </p>
+          <p class="my-part"><b>My part:</b> the smart‑contract layer — Solidity registry with OpenZeppelin
+            AccessControl and an <code>ISSUER_ROLE</code>, issue / revoke / verify functions, Hardhat unit
+            tests, and the Polygon Amoy deploy &amp; role‑grant scripts.</p>
+          <div class="tags">
+            <span>Solidity</span><span>Hardhat</span><span>OpenZeppelin</span><span>Polygon</span><span>Nuxt</span><span>Supabase</span>
+          </div>
+          <div class="card-links">
+            <a href="https://verify-delta-ten.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/RasyKy/verify" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- KHbnb -->
+        <article class="card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🏡</span>
+            <div class="card-badges">
+              <span class="badge live">● live</span>
+              <span class="badge">full‑stack</span>
+            </div>
+          </div>
+          <h3>KHbnb</h3>
+          <p>
+            An Airbnb‑style property booking platform for Cambodia built in Next.js. Guests browse
+            listings on a Google Map, book and pay through Stripe, and manage subscriptions; admins get
+            analytics and property management.
+          </p>
+          <p class="my-part"><b>My part:</b> built the API layer — login / signup / logout auth routes,
+            admin analytics, overview, bookings and properties endpoints, user bookings, profile and
+            payment‑method routes, and the Stripe payment‑intent flow.</p>
+          <div class="tags">
+            <span>Next.js</span><span>Supabase</span><span>Stripe</span><span>Google Maps</span><span>Radix UI</span>
+          </div>
+          <div class="card-links">
+            <a href="https://khbnb-gamma.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/sinawatra/KHbnb" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- Dev Companion AI -->
+        <article class="card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🧩</span>
+            <div class="card-badges"><span class="badge">VS Code ext</span><span class="badge">local AI</span></div>
+          </div>
+          <h3>Dev Companion AI</h3>
+          <p>
+            A VS Code / Cursor extension that runs entirely on local Ollama models: explains failed
+            terminal commands, maps API routes, audits npm packages, and generates tests and docs.
+            No source code leaves the machine.
+          </p>
+          <p class="my-part"><b>My part:</b> fixed Ollama request timeouts by switching to streamed
+            responses, and wrote the manual + integration QA report.</p>
+          <div class="tags">
+            <span>TypeScript</span><span>VS Code API</span><span>Ollama</span><span>QA testing</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NhoTomaneath/VSCODE-EXTENSION" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- PixelHarvest -->
+        <article class="card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🌾</span>
+            <div class="card-badges"><span class="badge">game dev</span><span class="badge">private repo</span></div>
+          </div>
+          <h3>PixelHarvest</h3>
+          <p>
+            A 2D pixel‑art farming game built in Unity with a team of three: walk around, plant crops,
+            tend animals and grow the farm.
+          </p>
+          <p class="my-part"><b>My part:</b> the crop‑planting system with inventory and hotbar, the animal
+            features, ground and crop tile assets, and setting up Git LFS so large game assets could be
+            versioned.</p>
+          <div class="tags">
+            <span>Unity</span><span>C#</span><span>Git LFS</span><span>Pixel art</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- ---------- solo projects ---------- -->
+      <div class="section-head sub-head reveal">
+        <p class="eyebrow">solo builds</p>
+        <h2>Things I built <span class="gradient-text">alone</span></h2>
+      </div>
+
+      <div class="projects">
+        <!-- LogAnalyzer -->
+        <article class="card reveal security featured">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🛡️</span>
+            <div class="card-badges">
+              <span class="badge sec">⚠ security</span>
+              <span class="badge">CLI + web</span>
+            </div>
+          </div>
+          <h3>LogAnalyzer</h3>
+          <p>
+            A Python tool that detects SSH brute‑force attacks from Linux <code>auth.log</code> files.
+            It aggregates failed logins by IP, tracks which accounts are targeted, and prints a ranked
+            table of offenders. The engine is decoupled so it runs as a CLI, a pip‑installable library,
+            or behind a Vue 3 drag‑and‑drop dashboard.
+          </p>
+          <pre class="mini-term"><span class="prompt">$</span> python cli.py auth.log
+<span class="ok">✔</span> parsed 2,418 lines
+<span class="warn">!</span> 203.0.113.7   failed ×142  → root, admin
+<span class="warn">!</span> 198.51.100.3  failed ×61   → ubuntu</pre>
+          <div class="tags">
+            <span>Python</span><span>Vue 3</span><span>TypeScript</span><span>Pinia</span><span>Linux logs</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/cheetahh1/LogAnalyzer" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- Roar -->
+        <article class="card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🦁</span>
+            <div class="card-badges"><span class="badge live">● live</span></div>
+          </div>
+          <h3>Roar Quote Generator</h3>
+          <p>
+            Daily random quotes with accounts. Users sign up, log in and save favourites;
+            the Next.js API layer queries a Supabase Postgres database so keys never touch the client.
+          </p>
+          <div class="tags">
+            <span>Next.js</span><span>React</span><span>Supabase Auth</span><span>Tailwind</span>
+          </div>
+          <div class="card-links">
+            <a href="https://roar-quote-generator.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/cheetahh1/Roar-quote-generator" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- Chaom Chau -->
+        <article class="card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🍜</span>
+            <div class="card-badges"><span class="badge">frontend</span></div>
+          </div>
+          <h3>Chaom Chau Restaurant</h3>
+          <p>
+            A one‑page restaurant website built with plain HTML and CSS — where the layout, spacing
+            and responsive habits started.
+          </p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+          <div class="card-links">
+            <a href="https://github.com/cheetahh1/Chaom-Chau-Restaurant" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <!-- Coming soon -->
+        <article class="card reveal soon featured">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="card-icon">🔮</span>
+            <div class="card-badges"><span class="badge">next up</span></div>
+          </div>
+          <h3>Loading next project…</h3>
+          <p>Something with containers, a CI pipeline and a security‑scan step baked in. Watch this space.</p>
+          <div class="loader"><span></span></div>
+          <div class="tags"><span>Docker</span><span>GitHub Actions</span><span>Trivy</span><span>Terraform</span><span>?</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">toolbox</p>
+        <h2>Skills &amp; <span class="gradient-text">stack</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>🛡️ Security &amp; ops</h3>
+          <div class="chips">
+            <span>Wazuh SIEM</span><span>Shuffle SOAR</span><span>MITRE ATT&amp;CK</span><span>Sysmon</span><span>Fail2ban</span><span>Linux log analysis</span><span>Attack simulation</span><span>Docker</span><span>DigitalOcean</span><span>Tailscale</span><span>Smart contracts (Solidity)</span><span>Env secrets</span><span>Git &amp; GitHub</span><span>Vercel</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>🧠 Backend &amp; data</h3>
+          <div class="chips">
+            <span>Python</span><span>Node.js</span><span>Next.js API routes</span><span>Supabase</span><span>PostgreSQL</span><span>REST APIs</span><span>Stripe</span><span>Auth &amp; middleware</span><span>Zod</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>💅 Frontend &amp; game dev</h3>
+          <div class="chips">
+            <span>TypeScript</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>Vue 3</span><span>Tailwind CSS</span><span>HTML / CSS</span><span>Radix UI</span><span>Unity (C#)</span>
+          </div>
+        </div>
+        <div class="skill-group reveal learning">
+          <h3>📚 Currently learning</h3>
+          <div class="chips">
+            <span>Kubernetes</span><span>GitHub Actions</span><span>Terraform</span><span>Nginx</span><span>OWASP Top 10</span><span>Bash scripting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee reveal" aria-hidden="true">
+        <div class="marquee-track">
+          <span>✦ Wazuh</span><span>✦ TypeScript</span><span>✦ Next.js</span><span>✦ Supabase</span><span>✦ Python</span><span>✦ Docker</span><span>✦ SOAR</span><span>✦ Linux</span><span>✦ MITRE ATT&amp;CK</span><span>✦ Solidity</span><span>✦ Vercel</span><span>✦ Git</span>
+          <span>✦ Wazuh</span><span>✦ TypeScript</span><span>✦ Next.js</span><span>✦ Supabase</span><span>✦ Python</span><span>✦ Docker</span><span>✦ SOAR</span><span>✦ Linux</span><span>✦ MITRE ATT&amp;CK</span><span>✦ Solidity</span><span>✦ Vercel</span><span>✦ Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ROADMAP ===================== -->
+    <section id="roadmap" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">where I'm headed</p>
+        <h2>DevSecOps <span class="gradient-text">roadmap</span></h2>
+        <p class="sub">Honest progress bars. They go up as I ship.</p>
+      </div>
+
+      <div class="roadmap reveal">
+        <div class="road-item">
+          <div class="road-head"><span>Full‑stack web apps</span><b>done</b></div>
+          <div class="bar"><i style="--w:100%"></i></div>
+        </div>
+        <div class="road-item">
+          <div class="road-head"><span>SIEM &amp; detection engineering</span><b>in progress</b></div>
+          <div class="bar"><i style="--w:70%"></i></div>
+        </div>
+        <div class="road-item">
+          <div class="road-head"><span>Linux &amp; log forensics</span><b>in progress</b></div>
+          <div class="bar"><i style="--w:65%"></i></div>
+        </div>
+        <div class="road-item">
+          <div class="road-head"><span>Containers (Docker)</span><b>in progress</b></div>
+          <div class="bar"><i style="--w:55%"></i></div>
+        </div>
+        <div class="road-item">
+          <div class="road-head"><span>CI/CD pipelines</span><b>learning</b></div>
+          <div class="bar"><i style="--w:35%"></i></div>
+        </div>
+        <div class="road-item">
+          <div class="road-head"><span>Cloud &amp; IaC (Terraform)</span><b>learning</b></div>
+          <div class="bar"><i style="--w:30%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact">
+      <div class="contact-card reveal">
+        <h2>Let's build something <span class="gradient-text">sparkly</span> ✨</h2>
+        <p>Open to internships, junior roles and collabs in web, DevOps or security. My inbox is pink and welcoming.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="https://github.com/cheetahh1" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="mailto:you@example.com" data-email>Email me</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" data-linkedin>LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> In Empiseysocheata · cheetahh1 · built with HTML, CSS, vanilla JS and an unreasonable amount of pink.</p>
+    <p class="tiny">press <kbd>t</kbd> to toggle theme</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
